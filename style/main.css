@@ -753,4 +753,18 @@ hr {
       animation: pop-in-small 700ms ease 2s both;
       margin-top: 10px;
       height: 40px; } }
+/* extras */
+.sidebar {
+  width: 180px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
+@media (max-width: 880px) {
+  .sidebar,
+  .sidebar .adsbygoogle {
+    display: none; } }
