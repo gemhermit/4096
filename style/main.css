@@ -370,13 +370,21 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
+  .tile.tile-4096 .tile-inner {
+    color: #f9f6f2;
+    background: #F3C219;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1.25px rgba(255, 255, 255, 0.33333);
+    font-size: 35px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-4096 .tile-inner {
+        font-size: 15px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #3c3a32;
-    font-size: 30px; }
+    background: #FFC600;
+    font-size: 29px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+        font-size: 9px; } }
 
 @-webkit-keyframes appear {
   0% {
@@ -710,15 +718,39 @@ hr {
   .game-message .lower {
     margin-top: 30px !important; } 
   
-.otherbotton{
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
+.app-notice {
+  position: relative;
+  -webkit-animation: pop-in-big 700ms ease 2s both;
+  -moz-animation: pop-in-big 700ms ease 2s both;
+  animation: pop-in-big 700ms ease 2s both;
+  background: #edc53f;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
   height: 40px;
-  line-height: 42px;
-  display: block;
-  text-align: center;}
-}
+  box-sizing: border-box;
+  border-radius: 3px; }
+  .app-notice:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .app-notice .notice-close-button {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.7; }
+  .app-notice p {
+    margin-bottom: 0; }
+  .app-notice, .app-notice p {
+    line-height: 20px; }
+  .app-notice a {
+    color: white; }
+  @media screen and (max-width: 520px) {
+    .app-notice {
+      -webkit-animation: pop-in-small 700ms ease 2s both;
+      -moz-animation: pop-in-small 700ms ease 2s both;
+      animation: pop-in-small 700ms ease 2s both;
+      margin-top: 10px;
+      height: 40px; } }
+
