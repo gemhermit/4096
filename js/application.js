@@ -3,7 +3,7 @@ window.requestAnimationFrame(function () {
   new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
 });
 
-  var storage = new LocalStorageManager();、
+  var storage = new LocalStorageManager();
   var noticeClose = document.querySelector(".notice-close-button");
   var notice = document.querySelector(".app-notice")
   
