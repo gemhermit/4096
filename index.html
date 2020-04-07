@@ -8,6 +8,43 @@
   <style type="text/css">a {text-decoration: none}</style>
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style type="text/css">
+  .app-notice {
+  position: relative;
+  -webkit-animation: pop-in-big 700ms ease 2s both;
+  -moz-animation: pop-in-big 700ms ease 2s both;
+  animation: pop-in-big 700ms ease 2s both;
+  background: #edc53f;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 3px; }
+  .app-notice:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .app-notice .notice-close-button {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.7; }
+  .app-notice p {
+    margin-bottom: 0; }
+  .app-notice, .app-notice p {
+    line-height: 20px; }
+  .app-notice a {
+    color: white; }
+  @media screen and (max-width: 520px) {
+    .app-notice {
+      -webkit-animation: pop-in-small 700ms ease 2s both;
+      -moz-animation: pop-in-small 700ms ease 2s both;
+      animation: pop-in-small 700ms ease 2s both;
+      margin-top: 10px;
+      height: 40px; } }
+  </style>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="keywords" content="2048,1024,4096,游戏,贝谷,贝谷游戏,4096game,bago game,bago,game"/>
   <meta name="description" content="2048,1024,4096,游戏,贝谷,贝谷游戏,4096game,bago game,bago,game"/>
