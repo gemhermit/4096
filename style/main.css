@@ -708,4 +708,12 @@ hr {
     line-height: 30px !important;
     margin-top: 90px !important; }
   .game-message .lower {
-    margin-top: 30px !important; } }
+    margin-top: 30px !important; } 
+  
+.otherbotton{
+    width: 50%;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px; }}
+}
